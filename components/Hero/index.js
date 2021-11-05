@@ -1,6 +1,5 @@
 import React from "react";
 import { Wrapper, StatsWrapper } from "./styles";
-
 export function Hero() {
     return (
         <Wrapper>
@@ -8,13 +7,13 @@ export function Hero() {
                 <h1>
                     Build Mafia <br /> Product Hunt Tracker
                 </h1>
-                <p>
+                <h2>
                     Build is a community of some crazy people who like shipping
                     side projects. <br /> And we’ve been shipping and storming
                     Product Hunt for a while now.
-                </p>
+                </h2>
                 <StatsWrapper>
-                    <div id="statGrid">
+                    <div id="statCard">
                         <div id="statContainer">
                             <div id="statCircle">
                                 <div id="statIcon">
@@ -24,25 +23,23 @@ export function Hero() {
                             </div>
                         </div>
                         <div id="statHelper">
-                            <h2># Product Hunt Launches</h2>
+                            <h3>Total Launches</h3>
                         </div>
                     </div>
-                    <div id="statGrid">
+                    <div id="statCard">
                         <div id="statContainer">
                             <div id="statCircle">
                                 <div id="statIcon">
-                                    <span id="statIndicator">
-                                        <img
-                                            src="/icons/upvote_blue.svg"
-                                            alt="indicator"
-                                        />
-                                    </span>
+                                    <img
+                                        src="/icons/upvote_blue.svg"
+                                        alt="upvotes"
+                                    />
                                 </div>
                                 <span id="statMain">16K</span>
                             </div>
                         </div>
                         <div id="statHelper">
-                            <h2># of Upvotes for Build Mafia Products</h2>
+                            <h3>Total Upvotes</h3>
                         </div>
                     </div>
                 </StatsWrapper>

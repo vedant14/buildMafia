@@ -9,7 +9,11 @@ export const Wrapper = styled.div`
     padding-bottom: 100px;
     > div {
         > h1 {
-            margin-top: 150px;
+            margin-top: 100px;
+            margin-bottom: 20px;
+        }
+        > h2 {
+            opacity: 0.7;
         }
     }
 `;
@@ -20,14 +24,16 @@ export const StatsWrapper = styled.div`
     grid-gap: 40px;
     margin-top: 80px;
     margin-bottom: 80px;
-    > div#statGrid {
+    padding: 0px 100px;
+    > div#statCard {
         padding: 40px;
         background: ${colors.secondaryBlue};
         border-radius: 20px;
         color: ${colors.primaryBlack};
+        filter: drop-shadow(6px 7px 10px rgba(0, 0, 0, 0.25));
+
         > div#statHelper {
-            padding-right: 100px;
-            padding-left: 100px;
+            opacity: 0.7;
         }
         > div#statContainer {
             margin: 40px;
@@ -41,6 +47,11 @@ export const StatsWrapper = styled.div`
                     width: 60px;
                     border-radius: 60px;
                     display: flex;
+                    > img {
+                        width: 30px;
+                        margin: auto;
+                        padding-bottom: 6px;
+                    }
                     > span#statIndicator {
                         color: ${colors.primaryBlue};
                         font-weight: 500;
@@ -62,6 +73,7 @@ export const StatsWrapper = styled.div`
                     font-weight: bold;
                     font-size: 72px;
                     line-height: 84px;
+                    padding-top: 10px;
                 }
             }
         }

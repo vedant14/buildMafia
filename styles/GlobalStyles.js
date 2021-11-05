@@ -31,17 +31,14 @@ export const GlobalStyles = createGlobalStyle`
 
   h1{    
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 44px;
+      font-size: 56px;
       line-height: 52px;
-    }
-    .bold {
-      font-weight: 700;
     }
   }
 
@@ -52,11 +49,8 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 30px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .bold {
-      font-weight: 400;
+      font-size: 28px;
+      line-height: 40px;
     }
   }
 
@@ -67,7 +61,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 22px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 23px;
     }
   }
