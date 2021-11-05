@@ -1,7 +1,12 @@
 import React from "react";
-import { Layout } from "../components";
+import { Layout, Hero } from "../components";
 const Home = () => {
-  return <Layout>Hi Vedant</Layout>;
+  return (
+    <Layout>
+      <Hero />
+      Hi Vedant
+    </Layout>
+  );
 };
 
 export default Home;

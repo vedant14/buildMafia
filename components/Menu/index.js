@@ -8,7 +8,9 @@ export function Menu({ items }) {
 		<Nav>
 			{items.map((item) => (
 				<li key={item.id}>
-					<Link href={item.link}>{item.name}</Link>
+					<Link href={item.link}>
+						<h4>{item.name}</h4>
+					</Link>
 				</li>
 			))}
 		</Nav>

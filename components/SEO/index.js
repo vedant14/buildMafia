@@ -3,13 +3,13 @@ import React from "react";
 
 export function SEO({ title, description }) {
   if (title === undefined) {
-    title = "Better Product Manager";
+    title = "Build Mafia";
   } else {
-    title = title + " | Better Product Manager";
+    title = title + " | Build Mafia";
   }
   if (description === undefined) {
     description =
-      "Tests and quizes, designed to give you a little taste of what the PM role is like.";
+      "Build is a community of some crazy people who like shipping side projects. And we’ve been shipping and storming Product Hunt for a while now.";
   }
   return (
     <Head>

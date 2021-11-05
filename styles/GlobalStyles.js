@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 
 
   body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     background-color: ${colors.white};
     min-height: 100vh;
     margin: 0;
@@ -31,14 +31,14 @@ export const GlobalStyles = createGlobalStyle`
 
   h1{    
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 52px;
-      line-height: 63px;
+      font-size: 44px;
+      line-height: 52px;
     }
     .bold {
       font-weight: 700;
@@ -47,13 +47,13 @@ export const GlobalStyles = createGlobalStyle`
 
   h2{    
     font-style: normal;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 28px;
     line-height: 30px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 38px;
-      line-height: 46px;
+      font-size: 24px;
+      line-height: 28px;
     }
     .bold {
       font-weight: 400;
@@ -62,25 +62,25 @@ export const GlobalStyles = createGlobalStyle`
 
   h3{
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     font-size: 22px;
     line-height: 22px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 28px;
-      line-height: 34px;
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 
   h4{    
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 20px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 
@@ -91,8 +91,8 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 18px;
     @media screen and (min-width: 768px) {
-      font-size: 18px;
-      line-height: 26px;
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 
