@@ -44,37 +44,37 @@ export const GlobalStyles = createGlobalStyle`
 
   h2{    
     font-style: normal;
-    font-weight: 500;
+    font-weight: 900;
     font-size: 28px;
     line-height: 30px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 28px;
+      font-size: 44px;
       line-height: 40px;
     }
   }
 
   h3{
     font-style: normal;
-    font-weight: 900;
-    font-size: 22px;
-    line-height: 22px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 30px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 24px;
-      line-height: 23px;
+      font-size: 28x;
+      line-height: 40px;
     }
   }
 
   h4{    
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
     line-height: 20px;
     margin: 0px;
     @media screen and (min-width: 768px) {
-      font-size: 20px;
-      line-height: 23px;
+      font-size: 22px;
+      line-height: 20px;
     }
   }
 
@@ -85,7 +85,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     line-height: 18px;
     @media screen and (min-width: 768px) {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 23px;
     }
   }
@@ -99,7 +99,6 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 200;
     font-size: 14px;
     text-transform: uppercase;
-    line-height: 16px;
     > a {
       font-size: 14px;
     }

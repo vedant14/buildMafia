@@ -9,7 +9,6 @@ import { MobileMenu } from "../MobileMenu";
 
 export function Header({ page }) {
 	const [menuOpen, setMenuOpen] = useState(false);
-	console.log(siteData);
 	return (
 		<HeaderWrapper menuOpen={menuOpen}>
 			<div className="Container">

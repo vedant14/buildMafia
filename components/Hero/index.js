@@ -7,11 +7,11 @@ export function Hero() {
                 <h1>
                     Build Mafia <br /> Product Hunt Tracker
                 </h1>
-                <h2>
+                <h3>
                     Build is a community of some crazy people who like shipping
                     side projects. <br /> And we’ve been shipping and storming
                     Product Hunt for a while now.
-                </h2>
+                </h3>
                 <StatsWrapper>
                     <div id="statCard">
                         <div id="statContainer">
@@ -23,7 +23,7 @@ export function Hero() {
                             </div>
                         </div>
                         <div id="statHelper">
-                            <h3>Total Launches</h3>
+                            <h4>Total Launches</h4>
                         </div>
                     </div>
                     <div id="statCard">
@@ -39,7 +39,7 @@ export function Hero() {
                             </div>
                         </div>
                         <div id="statHelper">
-                            <h3>Total Upvotes</h3>
+                            <h4>Total Upvotes</h4>
                         </div>
                     </div>
                 </StatsWrapper>

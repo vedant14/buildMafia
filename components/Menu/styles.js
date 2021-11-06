@@ -16,9 +16,8 @@ export const Nav = styled.ul`
     :last-child {
       margin-right: 0px;
     }
-    > a {
-      padding-bottom: 2px;
-      border-bottom: 3px solid ${colors.brandYellow};
+    > h4 {
+      opacity: 0.7;
     }
   }
   .profile-image {

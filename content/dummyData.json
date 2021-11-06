@@ -1,0 +1,58 @@
+[
+	{
+		"id": "1",
+		"name": "How Many BMWs",
+		"link": "https://www.producthunt.com/posts/how-many-bmws",
+		"tagline": "How many BMW bikes can you earn working in tech in India?",
+		"thumbnail": "/dummy/thumbnail.png",
+		"paid": "Free",
+		"topic": "Games",
+		"votes": "1212",
+		"builders": [
+			{
+				"id": "1",
+				"builder_name": "Vedant Lohbare",
+				"builder_thumbnail": "/dummy/vedant.jpg"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"name": "Better Product Manager",
+		"link": "https://www.producthunt.com/posts/how-many-bmws",
+		"tagline": "How many BMW bikes can you earn working in tech in India?",
+		"thumbnail": "/dummy/thumbnail.png",
+		"paid": "Free",
+		"topic": "Games",
+		"votes": "1212",
+		"builders": [
+			{
+				"id": "1",
+				"builder_name": "Vedant Lohbare",
+				"builder_thumbnail": "/dummy/vedant.jpg"
+			}
+		]
+	},
+	{
+		"id": "3",
+		"name": "Some Other Product",
+		"link": "https://www.producthunt.com/posts/how-many-bmws",
+		"tagline": "How many BMW bikes can you earn working in tech in India?",
+		"thumbnail": "/dummy/thumbnail.png",
+		"paid": "Free",
+		"topic": "Games",
+		"votes": "12122",
+		"builders": [
+			{
+				"id": "1",
+				"builder_name": "Vedant Lohbare",
+				"builder_thumbnail": "/dummy/vedant.jpg"
+			},
+			{
+				"id": "2",
+				"builder_name": "Vedant Lohbare",
+				"builder_thumbnail": "/dummy/vedant.jpg"
+			}
+		]
+	}
+]

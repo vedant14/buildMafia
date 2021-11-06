@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
             margin-top: 100px;
             margin-bottom: 20px;
         }
-        > h2 {
+        > h3 {
             opacity: 0.7;
         }
     }

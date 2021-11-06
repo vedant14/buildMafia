@@ -1,10 +1,10 @@
 import React from "react";
-import { Layout, Hero } from "../components";
+import { Layout, Hero, AllProducts } from "../components";
 const Home = () => {
   return (
     <Layout>
       <Hero />
-      Hi Vedant
+      <AllProducts />
     </Layout>
   );
 };
