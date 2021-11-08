@@ -1,7 +1,14 @@
 [
   {
     "id": "1",
-    "name": "Explore More",
-    "link": "/explore-more"
+    "name": "Builders",
+    "link": "/builders",
+    "is_button": false
+  },
+  {
+    "id": "2",
+    "name": "Add Your Product",
+    "link": "/submit-product",
+    "is_button": true
   }
 ]

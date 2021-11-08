@@ -19,8 +19,10 @@ export function ProductHuntCard({
                 </div>
                 <div id="info">
                     <div id="details">
-                        <h4>{name}</h4>
-                        <p>{tagline}</p>
+                        <p id="title">
+                            <strong>{name}</strong>
+                        </p>
+                        <p id="tagline">{tagline}</p>
                         <div id="tags">
                             <small>{paid}</small>
                             <span>•</span>
@@ -34,9 +36,9 @@ export function ProductHuntCard({
                 </div>
                 <div>
                     {builders.map((builder) => (
-                        <BuilderCard key={builder.id}>
-                            <img src={builder.builder_thumbnail} />
-                            <p>{builder.builder_name}</p>
+                        <BuilderCard key={builder.Builders.id}>
+                            <img src={builder.Builders.profile_image} />
+                            <p>{builder.Builders.name}</p>
                         </BuilderCard>
                     ))}
                 </div>

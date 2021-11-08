@@ -66,7 +66,7 @@ export const GlobalStyles = createGlobalStyle`
     }
   }
 
-  h4{    
+  h4 , button{    
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -115,54 +115,19 @@ export const GlobalStyles = createGlobalStyle`
 
   button {
     color: ${colors.primaryBlue};
-    background: ${colors.white};
+    background: ${colors.secondaryBlue};
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     padding: 10px 14px;
-    margin: 5px 10px 5px 0px;
+    /*margin: 5px 10px 5px 0px;*/
     border-radius: .25rem;
-    border: 2px solid ${colors.primaryBlack};
-    box-shadow: 3px 3px 0 ${colors.primaryBlack};
-    transition: all 0.05s ease-in;
+    border: none;
     @media screen and (min-width: 768px) {
-      font-size: 18px;
-      padding: 15px 30px;
-      margin: 10px 30px 10px 0px;
-    }
-    &:hover{
-      transform: translate(4px, 4px);
-      box-shadow: 1px 1px 0px ${colors.primaryBlack};
-    }
-    &:disabled{  
-      background: ${colors.darkGrey};
-      transform: translate(4px, 4px);
-      box-shadow: 0px 0px 0px ${colors.primaryBlack}; 
+      padding: 10px 15px;
+      /*margin: 10px 30px 10px 0px;*/
     }
   }
-  .selected {
-    background: ${colors.primaryBlue} !important;
-    color: ${colors.white} !important;
-  }
-
-  .active {
-    background: ${colors.primary};
-    color: ${colors.white};
-  }
-
-  
-  .warning {
-    color: red;
-    margin-top: 200px;
-    margin-bottom: 200px;
-    text-transform: uppercase;
-  }
-
-  .gif-image{
-    max-width: 100%;
-    margin: 20px auto;
-  }
-
 
   .Container {
     margin-left: 30px;

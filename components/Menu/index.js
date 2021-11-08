@@ -9,7 +9,11 @@ export function Menu({ items }) {
 			{items.map((item) => (
 				<li key={item.id}>
 					<Link href={item.link}>
-						<h4>{item.name}</h4>
+						{item.is_button === true ? (
+							<button>{item.name}</button>
+						) : (
+							<h4>{item.name}</h4>
+						)}
 					</Link>
 				</li>
 			))}

@@ -1,6 +1,16 @@
 import React from "react";
 import { Wrapper, StatsWrapper } from "./styles";
-export function Hero() {
+import { supabase } from "../../services/supabaseClient";
+export function Hero({ productData }) {
+    const count = productData.length;
+    const total = productData.reduce((a, v) => (a = a + v.vote_count), 0);
+
+    function kFormatter(num) {
+        return Math.abs(num) > 999
+            ? Math.sign(num) * (Math.abs(num) / 1000).toFixed(1) + "k"
+            : Math.sign(num) * Math.abs(num);
+    }
+
     return (
         <Wrapper>
             <div className="Container">
@@ -19,7 +29,7 @@ export function Hero() {
                                 <div id="statIcon">
                                     <span id="statIndicator">#</span>
                                 </div>
-                                <span id="statMain">140</span>
+                                <span id="statMain">{count}</span>
                             </div>
                         </div>
                         <div id="statHelper">
@@ -35,7 +45,7 @@ export function Hero() {
                                         alt="upvotes"
                                     />
                                 </div>
-                                <span id="statMain">16K</span>
+                                <span id="statMain">{kFormatter(total)}</span>
                             </div>
                         </div>
                         <div id="statHelper">

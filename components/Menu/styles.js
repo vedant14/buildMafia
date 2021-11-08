@@ -12,7 +12,6 @@ export const Nav = styled.ul`
     cursor: pointer;
     padding: 15px 0px;
     margin-right: 30px;
-    margin-bottom: auto;
     :last-child {
       margin-right: 0px;
     }

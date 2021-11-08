@@ -16,17 +16,17 @@ export const Wrapper = styled.div`
         display: flex;
         justify-content: space-between;
         border-right: 1px solid ${colors.primaryBlue};
-        padding-top: 2px;
         > div#details {
             width: 400px;
             margin-right: 50px;
-            > h4,
-            p {
-                margin: 0px;
+            strong {
             }
             > p {
-                padding-top: 3px;
+                margin: 0px;
+            }
+            > p#tagline {
                 opacity: 0.7;
+                padding-top: 3px;
             }
             > div#tags {
                 width: fit-content;
