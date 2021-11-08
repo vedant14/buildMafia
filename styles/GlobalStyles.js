@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 export const colors = {
   primaryBlack: "#262626",
   darkGrey: "#6F6F6F",
-  primaryBlue: "#0283FF",
+  primaryBlue: "#0765FD",
   secondaryBlue: "#E4EFFF",
   white: "#FFFFFF",
 };
@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
 
 
   body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     background-color: ${colors.white};
     min-height: 100vh;
     margin: 0;
