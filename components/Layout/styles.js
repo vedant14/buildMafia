@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
 	margin: 0 auto;
 	background-size: 100%;
 	> main {
-		margin-top: 80px;
+		margin-top: 60px;
 	}
-`
+`;

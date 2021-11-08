@@ -13,7 +13,7 @@ export const Wrapper = styled.ul`
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1080px) {
             font-size: 16px;
         }
     }

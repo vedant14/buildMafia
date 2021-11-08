@@ -32,7 +32,7 @@ export function SubmitForm() {
 
     const uploadData = async () => {
         const { data, error } = await supabase
-            .from("Submission")
+            .from("submissions")
             .insert([{ url: url }]);
     };
 

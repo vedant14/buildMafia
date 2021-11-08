@@ -8,7 +8,7 @@ export const OverrideGlobalStyle = createGlobalStyle`
 export const Wrapper = styled.div`
   display: block;
   position: fixed;
-  background: ${colors.white};
+  background: ${colors.primaryBlue};
   right: ${(props) => (props.menuOpen ? "0px" : "-100%")};
   width: 100%;
   height: 100%;

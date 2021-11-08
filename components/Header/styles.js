@@ -19,9 +19,9 @@ export const HeaderWrapper = styled.header`
 
 export const LogoWrapper = styled.h4`
   cursor: pointer;
-  margin: auto;
+  margin: auto 0px;
   font-weight: 900;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1080px) {
     margin: auto 0px;
   }
 `;

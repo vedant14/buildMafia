@@ -36,7 +36,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 32px;
     letter-spacing: -1px;
     margin: 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 56px;
       line-height: 52px;
     }
@@ -48,7 +48,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 28px;
     line-height: 30px;
     margin: 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 44px;
       line-height: 40px;
     }
@@ -60,7 +60,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 28px;
     line-height: 30px;
     margin: 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 28x;
       line-height: 40px;
     }
@@ -72,7 +72,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 20px;
     line-height: 20px;
     margin: 0px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 22px;
       line-height: 20px;
     }
@@ -84,7 +84,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 300;
     font-size: 16px;
     line-height: 18px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1080px) {
       font-size: 18px;
       line-height: 23px;
     }
@@ -123,8 +123,8 @@ export const GlobalStyles = createGlobalStyle`
     /*margin: 5px 10px 5px 0px;*/
     border-radius: .25rem;
     border: none;
-    @media screen and (min-width: 768px) {
-      padding: 10px 15px;
+    @media screen and (min-width: 1080px) {
+      padding: 12px 20px;
       /*margin: 10px 30px 10px 0px;*/
     }
   }

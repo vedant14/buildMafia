@@ -42,10 +42,7 @@ export function UploadData({ slugLink, id }) {
 	const post = data.post;
 
 	const handleUpload = () => {
-		console.log("Starting Upload");
 		uploadProductSupa();
-		getBuilders();
-		uploadBuilders();
 		deleteRow();
 	};
 
@@ -55,7 +52,7 @@ export function UploadData({ slugLink, id }) {
 	const uploadProductSupa = async () => {
 		var linkArray = [];
 		post.productLinks.map((link) => linkArray.push(link.url));
-		const { data, error } = await supabase.from("Product").upsert(
+		const { data, error } = await supabase.from("products").upsert(
 			{
 				ph_id: post.id,
 				name: post.name,
@@ -65,11 +62,12 @@ export function UploadData({ slugLink, id }) {
 				vote_count: post.votesCount,
 				thumbnail: post.thumbnail.url,
 				product_links: linkArray,
+				featured_at: post.featuredAt,
 			},
 			{ onConflict: "slug" }
 		);
 		product_id = data[0].id;
-		console.log("Uploaded Product", data);
+		getBuilders();
 	};
 
 	const getBuilders = () => {
@@ -77,7 +75,7 @@ export function UploadData({ slugLink, id }) {
 	};
 
 	const uploadUserSupa = async (maker) => {
-		const { data, error } = await supabase.from("Builders").upsert(
+		const { data, error } = await supabase.from("builders").upsert(
 			{
 				ph_id: maker.id,
 				name: maker.name,
@@ -88,27 +86,24 @@ export function UploadData({ slugLink, id }) {
 			{ onConflict: "ph_id" }
 		);
 		builder_ids.push(data[0].id);
-		console.log("Uploaded Builder", data);
+		mapBuilders();
 	};
 
-	const uploadBuilders = () => {
+	const mapBuilders = () => {
 		builder_ids.map((builder_id) => uploadProductLink(builder_id));
-		console.log("Mapping Builders", builder_ids);
 	};
 
 	const uploadProductLink = async (builder_id) => {
-		console.log("Uploaded Product Link", builder_id);
-		const { data, error } = await supabase.from("BuilderProducts").upsert({
+		const { data, error } = await supabase.from("builder_products").upsert({
 			product_id: product_id,
 			builder_id: builder_id,
 		});
 	};
 	const deleteRow = async () => {
 		const { data, error } = await supabase
-			.from("Submission")
+			.from("submissions")
 			.delete()
 			.eq("id", id);
-		console.log("Deleted Submission", data);
 	};
 
 	return (

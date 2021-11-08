@@ -20,6 +20,7 @@ export function ProductHuntCard({
                         alt={name}
                         width={100}
                         height={100}
+                        quality={100}
                     />
                 </div>
                 <div id="info">
@@ -28,27 +29,23 @@ export function ProductHuntCard({
                             <strong>{name}</strong>
                         </p>
                         <p id="tagline">{tagline}</p>
-                        <div id="tags">
-                            <small>{paid}</small>
-                            <span>•</span>
-                            <small>{topic}</small>
-                        </div>
+                        <div id="tags">{/* <small>{topic}</small> */}</div>
                     </div>
                     <div id="votes">
                         <img src="/icons/upvote_grey.svg" alt="Votes" />
                         <p>{votes}</p>
                     </div>
                 </div>
-                <div>
+                <div id="buildercard">
                     {builders.map((builder) => (
-                        <BuilderCard key={builder.Builders.id}>
+                        <BuilderCard key={builder.builders.id}>
                             <Image
-                                src={builder.Builders.profile_image}
+                                src={builder.builders.profile_image}
                                 width={30}
                                 height={30}
                                 className="ph-avatar"
                             />
-                            <p>{builder.Builders.name}</p>
+                            <p>{builder.builders.name}</p>
                         </BuilderCard>
                     ))}
                 </div>

@@ -19,7 +19,7 @@ export function AllProducts({ productData }) {
                             link={post.product_links[0]}
                             votes={post.vote_count}
                             topic={dummyData[0].topic}
-                            builders={post.BuilderProducts}
+                            builders={post.builder_products}
                         />
                     ))}
                 </div>

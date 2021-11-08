@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
+import styled from "styled-components";
+import { colors } from "../../styles/GlobalStyles";
 export const HamburgerIcon = styled.div`
   display: block;
   width: 30px;
@@ -9,7 +9,7 @@ export const HamburgerIcon = styled.div`
 
   :before,
   div {
-    background-color: ${colors.primaryBlack};
+    background-color: ${colors.white};
     border-radius: 2px;
     content: "";
     display: block;
@@ -20,17 +20,17 @@ export const HamburgerIcon = styled.div`
   }
 
   :before {
-    transform: ${props =>
+    transform: ${(props) =>
       props.menuOpen ? "translateY(8px) rotate(45deg)" : ""};
-    background-color: ${colors.primaryBlack};
+    background-color: ${colors.white};
   }
 
   div {
-    transform: ${props =>
+    transform: ${(props) =>
       props.menuOpen ? "translateY(0px) rotate(-45deg)" : ""};
   }
 
   @media screen and (min-width: 1024px) {
     display: none;
   }
-`
+`;

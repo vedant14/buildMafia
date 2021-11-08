@@ -9,15 +9,18 @@ const Home = () => {
   }, []);
 
   const fetchData = async () => {
-    const { data: Product, loading, error } = await supabase
-      .from("Product")
+    const { data: products, loading, error } = await supabase
+      .from("products")
       .select(
-        `id, name, slug, tagline, description, vote_count, thumbnail, product_links, BuilderProducts( Builders(id, name, profile_link, profile_image, twitter_username))`
-      );
+        `id, name, slug, tagline, description, vote_count, thumbnail, product_links, builder_products( builders(id, name, profile_link, profile_image, twitter_username))`
+      )
+      .order("featured_at", { ascending: false });
     if (loading) {
+      console.log("Loading");
       return <h1>Loading</h1>;
     }
-    setProductData(Product);
+    setProductData(products);
+    console.log(products);
   };
   return (
     <Layout>

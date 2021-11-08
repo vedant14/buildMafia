@@ -9,11 +9,11 @@ const Upload = () => {
   }, []);
 
   const fetchData = async () => {
-    const { data: Submission, loading, error } = await supabase
-      .from("Submission")
+    const { data: submissions, loading, error } = await supabase
+      .from("submissions")
       .select(`id, url`)
       .eq("is_approved", true);
-    setProductData(Submission);
+    setProductData(submissions);
   };
 
   return (
