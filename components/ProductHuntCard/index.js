@@ -1,6 +1,6 @@
 import React from "react";
 import { Wrapper, BuilderCard } from "./styles";
-
+import Image from "next/image";
 export function ProductHuntCard({
     name,
     thumbnail,
@@ -15,7 +15,12 @@ export function ProductHuntCard({
         <a href={link} target="_blank">
             <Wrapper>
                 <div id="thumbnail">
-                    <img src={thumbnail} alt={name} />
+                    <Image
+                        src={thumbnail}
+                        alt={name}
+                        width={100}
+                        height={100}
+                    />
                 </div>
                 <div id="info">
                     <div id="details">
@@ -37,7 +42,12 @@ export function ProductHuntCard({
                 <div>
                     {builders.map((builder) => (
                         <BuilderCard key={builder.Builders.id}>
-                            <img src={builder.Builders.profile_image} />
+                            <Image
+                                src={builder.Builders.profile_image}
+                                width={30}
+                                height={30}
+                                className="ph-avatar"
+                            />
                             <p>{builder.Builders.name}</p>
                         </BuilderCard>
                     ))}

@@ -8,10 +8,6 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     grid-gap: 20px;
-
-    > div#thumbnail > img {
-        width: 100px;
-    }
     > div#info {
         display: flex;
         justify-content: space-between;
@@ -80,7 +76,7 @@ export const BuilderCard = styled.div`
     margin: 0px 0px 8px 0px;
     border-radius: 10px;
     width: fit-content;
-    > img {
+    .ph-avatar {
         width: 35px;
         height: 35px;
         border-radius: 40px;

@@ -1,12 +1,7 @@
 import React from "react";
-import { Layout, Hero, AllProducts } from "../components";
+import { Layout } from "../components";
 const Builders = () => {
-	return (
-		<Layout>
-			<Hero />
-			<AllProducts />
-		</Layout>
-	);
+	return <Layout>Hi Vedant</Layout>;
 };
 
 export default Builders;

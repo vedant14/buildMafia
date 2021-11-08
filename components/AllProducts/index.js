@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Wrapper } from "./styles";
 import { ProductHuntCard } from "../ProductHuntCard";
 import dummyData from "../../content/dummyData.json";
-import { supabase } from "../../services/supabaseClient";
 
-export function AllProducts({ productData, setProductData }) {
-    useEffect(() => {
-        fetchData();
-    }, []);
-
-    const fetchData = async () => {
-        const { data: Product, loading, error } = await supabase
-            .from("Product")
-            .select(
-                `id, name, slug, tagline, description, vote_count, thumbnail, product_links, BuilderProducts( Builders(id, name, profile_link, profile_image, twitter_username))`
-            );
-        setProductData(Product);
-    };
+export function AllProducts({ productData }) {
     return (
         <Wrapper className="Container">
             <h2>All Our Products</h2>
