@@ -28,32 +28,32 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
-  render() {
-    return (
-      <Html>
-        <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              window.dataLayer = window.dataLayer || [];
-              (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:2695839,hjsv:6};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-              });
-            `,
-            }}
-          />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+  // render() {
+  //   return (
+  //     <Html>
+  //       <Head>
+  //         {/* Global Site Tag (gtag.js) - Google Analytics */}
+  //         <script
+  //           dangerouslySetInnerHTML={{
+  //             __html: `
+  //             window.dataLayer = window.dataLayer || [];
+  //             (function(h,o,t,j,a,r){
+  //               h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  //               h._hjSettings={hjid:2695839,hjsv:6};
+  //               a=o.getElementsByTagName('head')[0];
+  //               r=o.createElement('script');r.async=1;
+  //               r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  //               a.appendChild(r);
+  //             });
+  //           `,
+  //           }}
+  //         />
+  //       </Head>
+  //       <body>
+  //         <Main />
+  //         <NextScript />
+  //       </body>
+  //     </Html>
+  //   );
+  // }
 }
